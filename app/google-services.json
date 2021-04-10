@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "374386429309",
+    "project_id": "hackku-2021-trackify",
+    "storage_bucket": "hackku-2021-trackify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374386429309:android:5381ade7b382eb5473d014",
+        "android_client_info": {
+          "package_name": "hackku2021.trackify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374386429309-964jhaofnm0jvuc20l4t1b035ikndmq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hackku2021.trackify",
+            "certificate_hash": "5de135e35c312b158b195fd9aac2f7c23601077a"
+          }
+        },
+        {
+          "client_id": "374386429309-shjh3gvbuv78r8ci1qftd0gu9mes9qpv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXiLgoJB-ihGXR5RCRSIcRWEbbV36LUHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374386429309-shjh3gvbuv78r8ci1qftd0gu9mes9qpv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
