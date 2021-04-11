@@ -11,7 +11,7 @@
         >
 
         <LinearLayout
-            android:background="@drawable/gradient_one"
+            android:background="@drawable/gradient_three"
             android:layout_width="match_parent"
             android:layout_height="240dp"
             android:orientation="vertical">
@@ -31,25 +31,6 @@
                     android:scaleType="centerCrop"
                     android:layout_height="150dp"
                     android:src="@drawable/logo"/>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#9A228B22"
-                    android:id="@+id/userInfoEditProfilePictureRelativeLayout"
-                    android:visibility="gone"
-                    >
-
-                    <ImageButton
-                        android:id="@+id/userInfoEditProfilePicture"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:background="@drawable/button_round_background_gradient"
-                        android:padding="8dp"
-                        app:srcCompat="@drawable/ic_camera" />
-
-                </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -135,9 +116,10 @@
                     android:textSize="20sp"
                     />
                 <TextView
+                    android:id="@+id/textViewTotalVehicleCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4"
+                    android:text="0"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:paddingTop="10dp"
@@ -159,9 +141,10 @@
                     android:textSize="20sp"
                     />
                 <TextView
+                    android:id="@+id/textViewGoodCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2"
+                    android:text="0"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:paddingTop="10dp"
@@ -182,9 +165,10 @@
                     android:textSize="20sp"
                     />
                 <TextView
+                    android:id="@+id/textViewBadCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2"
+                    android:text="0"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:paddingTop="10dp"
@@ -204,107 +188,6 @@
     </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:elevation="9dp"
-            android:layout_marginTop="10dp"
-            app:cardCornerRadius="15dp">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="8dp"
-        android:paddingEnd="8dp"
-        android:background="@drawable/gradient_one"
-        android:paddingTop="8dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/ic_email" />
-
-        <TextView
-            android:id="@+id/userInfoTextViewEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:textSize="15sp"
-            android:text="Email"
-            android:textColor="#fff" />
-
-        <EditText
-            android:id="@+id/userInfoEditTextEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="7"
-            android:visibility="gone"
-            android:hint="Enter your Phone Number"
-            android:textColorHint="#fff"
-            android:textColor="#fff"
-            android:textSize="15sp" />
-
-    </LinearLayout>
-        </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="9dp"
-        app:cardCornerRadius="15dp">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="8dp"
-        android:paddingEnd="8dp"
-        android:background="@drawable/gradient_one"
-        android:paddingTop="8dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/ic_mobile" />
-
-        <TextView
-            android:id="@+id/userInfoTextViewPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:textSize="15sp"
-            android:text="Phone"
-            android:textColor="#fff" />
-
-        <EditText
-            android:id="@+id/userInfoEditTextPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="7"
-            android:visibility="gone"
-            android:hint="Enter your Phone Number"
-            android:textColorHint="#fff"
-            android:textColor="#fff"
-            android:textSize="15sp" />
-
-    </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
             android:id="@+id/userInfoLogOutCardView"
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
@@ -317,7 +200,7 @@
                 android:layout_height="match_parent"
                 android:paddingBottom="8dp"
                 android:paddingEnd="8dp"
-                android:background="@drawable/button_gradient_red"
+                android:background="@drawable/gradient_two"
                 android:paddingTop="8dp"
                 android:orientation="horizontal">
 
@@ -354,8 +237,41 @@
         android:layout_marginEnd="25dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="15dp"
-        android:onClick="editUserInfoMethodCall"
         android:src="@drawable/ic_pencil"
         android:background="@drawable/button_round_background_gradient" />
+
+    <LinearLayout
+        android:id="@+id/userInfoButtonLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/userInfoEditButtonCancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:onClick="backButtonMethodCall"
+            android:background="@drawable/button_gradient_red"/>
+
+        <Button
+            android:id="@+id/userInfoEditButtonSave"
+            android:layout_marginStart="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="@drawable/button_round_background_gradient"/>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/myAccountProgressSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
 
 </RelativeLayout>
